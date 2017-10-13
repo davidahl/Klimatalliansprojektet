@@ -1,0 +1,84 @@
+body p{
+	font-family: Calibri;
+}
+#wrapper{
+	width:1100px;
+	height:800px;
+}
+#logo{
+	background-image: url("logo.png");
+	background-repeat: no-repeat;
+	float: left;
+	margin-left:140px;
+	width:100%;
+	height:100px;
+}
+#menu{
+	float:left;
+	margin-left:100px;
+	width:100%;
+	height: 120px;
+}
+#menu ul{
+	list-style-type: none;
+}
+#menu li{
+	display:block;
+	width: 110px;
+	height:60 px;
+	float:left;
+}
+#menu li a{
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu li a:hover{
+	color: #26EBFF;
+}
+#sidebar{
+	float:left;
+	height:600px;
+	width:200px;
+}
+#sidebar ul{
+	float:left;
+	list-style-type:none;
+}
+#sidebar li{
+	margin-top:1em;
+	margin-bottom:1em;
+}
+.menuitem a{
+	font-family:Calibri;
+	color:black;
+	font-size:16px;
+	text-decoration:none;
+}
+.menuitem a:hover{
+	color:#26EBFF;
+}
+#stat{
+	float:left;
+	height:700px;
+	width:700px;
+}
+#stat h1{
+	font-family:Calibri;
+	text-decoration:none;
+}
+#stat table{
+	float:left;
+	font-family: Calibri;
+	border-spacing:2px;
+}
+#stat tr{
+	border: 1px solid black;
+	line-width: 20px;
+	line-height: 20px;
+}
+#stat th,td{
+	width:200px;
+}
+#year{
+	font-weight:bold;
+}
