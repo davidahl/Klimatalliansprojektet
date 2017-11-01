@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('#bensininput').
 	/**$('#wrapper').css({
 		'position' : 'absolute',
 		'left' : '50%',
@@ -8,3 +9,6 @@ $(document).ready(function(){
 	});**/
 
 });
+function calculate(e){
+
+}
