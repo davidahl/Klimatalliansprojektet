@@ -3,6 +3,7 @@ body{
 	background-repeat: repeat-x;
 }
 #wrapper{
+    font-family: 'Open Sans', sans-serif;
 	margin:auto;
 	width:1300px;
 	height:2000px;
@@ -47,7 +48,7 @@ body{
 	margin-bottom:1em;
 }
 .menuitem a{
-	font-family:Calibri;
+	/*font-family:Calibri;*/
 	color:black;
 	font-size:16px;
 	text-decoration:none;
@@ -60,7 +61,7 @@ body{
 	height:1600px;
 }
 #content h1{
-	font-family:Arial;
+	/*font-family:Arial;*/
 	font-size:26px;
 }
 #stat{
@@ -71,17 +72,8 @@ body{
 	float: left;
 	border-spacing:2px;
 }
-#stat tr{
-	clear:right;
-}
 #stat th,td{
-	margin-left:0;
+	text-align: left;
 	height:10px;
 	width:200px;
-}
-#stat select{
-	margin-left:3em;
-}
-#stat p{
-	margin-left:3em;
 }

@@ -1,6 +1,16 @@
+var outlets=[];
+var components=["input","option","output"];
+
 $(document).ready(function(){
-    $('#bensininput').
-	/**$('#wrapper').css({
+    $(".outlet").each(function(){
+        outlets.push($(this).attr('name'));
+    });
+    for (var i in outlet) {
+        $("."+outlet[i]+components[0]).addEventListener('keypress', function(e){
+            
+        });
+    }
+    /**$('#wrapper').css({
 		'position' : 'absolute',
 		'left' : '50%',
         'top' : '50%',
@@ -9,6 +19,7 @@ $(document).ready(function(){
 	});**/
 
 });
-function calculate(e){
 
-}
+function calculate(input){
+
+};

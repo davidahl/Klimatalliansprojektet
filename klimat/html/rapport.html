@@ -6,6 +6,7 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
 		<link rel="icon" href="../res/icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -61,85 +62,89 @@
 					<p>
 						År: <span style="font-weight:bold;"> Current Year </span>
 					</p>
-					<tables>
-						<tr >
-							<th>Utsläppskälla</th>
-							<th>Inköpt mängd</th>
-							<th> Enhet</th>
-							<th> ton CO<sub>2</sub></th>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input id="bensininput" type="text" class="inputbox" onkeypress="return calc(this)"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+					<table>
+						<thead>
+							<tr>
+								<th>Utsläppskälla</th>
+								<th>Inköpt mängd</th>
+								<th> Enhet</th>
+								<th> ton CO<sub>2</sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="outlet" name="bensin">
+									<p>Bensin</p>
+								</td>
+								<td> <input name="bensininput" type="text" class="inputbox"/> </td>
+								<td>
+									<select>
+										<option>
+											m<sup>3</sup>
+										</option>
+										<option>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+									<select>
+								</td>
+								<td>
+									<input name="bensinoutput" type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="outlet" name="flyg">
+									<p>Bensin</p>
+								</td>
+								<td> <input type="text" class="inputbox"/> </td>
+								<td>
+									<select>
+										<option>
+											m<sup>3</sup>
+										</option>
+										<option>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+									<select>
+								</td>
+								<td>
+									<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="outlet" name="gång">
+									<p>Bensin</p>
+								</td>
+								<td> <input type="text" class="inputbox"/> </td>
+								<td>
+									<select>
+										<option>
+											m<sup>3</sup>
+										</option>
+										<option>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+									<select>
+								</td>
+								<td>
+									<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="outlet" name="other">
+									<p>Bensin</p>
+								</td>
+								<td> <input type="text" class="inputbox"/> </td>
+								<td>
+									<select>
+										<option>
+											m<sup>3</sup>
+										</option>
+										<option>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
+									<select>
+								</td>
+								<td>
+									<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
