@@ -74,7 +74,7 @@
 					<tbody id="stattable">
 						<tr>
 							<td>Bensin</td>
-							<td><input name="in" type="text" class="inputbox"/></td>
+							<td><input id="bensinin" type="text" class="inputbox" onfocusout="calculate('#bensinin', '#bensinout')"/></td>
 							<td>
 								<select>
 									<option>
@@ -82,11 +82,11 @@
 									</option>
 								</select>
 							</td>
-							<td><input name="out" type="text" class="inputbox"/></td>
+							<td><input id="bensinout" type="text" class="inputbox"/></td>
 					    </tr>
 					   	<tr>
 							<td>Diesel</td>
-							<td><input name="in" type="text" class="inputbox"/></td>
+							<td><input id="dieselin" type="text" class="inputbox" onfocusout="calculate('#dieselin','#dieselout')"/></td>
 							<td>
 								<select>
 									<option>
@@ -94,7 +94,7 @@
 									</option>
 								</select>
 							</td>
-							<td><input name="out" type="text" class="inputbox"/></td>
+							<td><input id="dieselout" type="text" class="inputbox" /></td>
 					   	</tr>
 						<tr>
 							<td>Diesel 24% förnybar</td>

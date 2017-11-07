@@ -23,6 +23,8 @@ $(document).ready(function(){
 
 });
 
-function calculate(input){
-
+function calculate(input, output){
+    var val=parseInt($(input).val());
+    val*=8.87;
+    $(output).val(val.toFixed(2));
 };
