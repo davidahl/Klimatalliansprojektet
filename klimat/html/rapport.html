@@ -74,7 +74,7 @@
 					<tbody id="stattable">
 						<tr>
 							<td>Bensin</td>
-							<td><input id="bensinin" type="text" class="inputbox" onfocusout="calculate('#bensinin', '#bensinout')"/></td>
+							<td><input type="text" class="inputbox"/></td>
 							<td>
 								<select>
 									<option>
@@ -82,11 +82,11 @@
 									</option>
 								</select>
 							</td>
-							<td><input id="bensinout" type="text" class="inputbox"/></td>
+							<td><input type="text" class="inputbox"/></td>
 					    </tr>
 					   	<tr>
 							<td>Diesel</td>
-							<td><input id="dieselin" type="text" class="inputbox" onfocusout="calculate('#dieselin','#dieselout')"/></td>
+							<td><input type="text" class="inputbox" /></td>
 							<td>
 								<select>
 									<option>
@@ -94,11 +94,11 @@
 									</option>
 								</select>
 							</td>
-							<td><input id="dieselout" type="text" class="inputbox" /></td>
+							<td><input type="text" class="inputbox" /></td>
 					   	</tr>
 						<tr>
 							<td>Diesel 24% förnybar</td>
-							<td><input type="text" class="inputbox"/></td>
+							<td><input  type="text" class="inputbox"/></td>
 							<td>
 								<select>
 									<option>
@@ -107,7 +107,7 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
+					    </tr>
 						<tr>
 							<td>Diesel Preem Evolution</td>
 							<td><input type="text" class="inputbox"/></td>
@@ -119,7 +119,7 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
+					   	</tr>
 						<tr>
 							<td>RME</td>
 							<td><input type="text" class="inputbox"/></td>
@@ -131,7 +131,7 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
+						</tr>
 						<tr>
 							<td>Etanol</td>
 							<td><input type="text" class="inputbox"/></td>
@@ -143,7 +143,7 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
+						</tr>
 						<tr>
 							<td>Biogas</td>
 							<td><input type="text" class="inputbox"/></td>
@@ -155,8 +155,8 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
-						<tr>
+						</tr>
+						<tr id="hvo">
 							<td>HVO</td>
 							<td><input type="text" class="inputbox"/></td>
 							<td>
@@ -167,8 +167,8 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
-						<tr>
+						</tr>
+						<tr id="miljo">
 							<td>Miljömärkt el till fordon</td>
 							<td><input type="text" class="inputbox"/></td>
 							<td>
@@ -179,8 +179,8 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
-						<tr>
+						</tr>
+						<tr id="ospec">
 							<td>Ospecificerad el till fordon</td>
 							<td><input type="text" class="inputbox"/></td>
 							<td>
@@ -191,8 +191,8 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
-						<tr>
+						</tr>
+						<tr id="else">
 							<td>Övrigt drivmedel, ange vad</td>
 							<td><input type="text" class="inputbox"/></td>
 							<td>
@@ -204,7 +204,7 @@
 							</td>
 							<td><input type="text" class="inputbox"/></td>
 					    	</tr>
-						<tr>
+						<tr id="privat">
 							<td>Privatbil (körning i tjänsten)</td>
 							<td><input type="text" class="inputbox"/></td>
 							<td>
@@ -216,7 +216,7 @@
 							</td>
 							<td><input type="text" class="inputbox"/></td>
 					    	</tr>
-						<tr>
+						<tr id="rental">
 							<td>Hyrbil</td>
 
 							<td><input type="text" class="inputbox"/></td>
