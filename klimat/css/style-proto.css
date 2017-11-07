@@ -1,13 +1,17 @@
 body{
-	background-image: url("../res/gradient.png");
+	
 	background-repeat: repeat-x;
+	background-color: #E0E0E0;
 }
 #wrapper{
-    font-family: 'Open Sans', sans-serif;
-	margin:auto;
-	width:1300px;
-	height:2000px;
-}
+	background-image: url("../res/gradient.png");
+	background-repeat: repeat-x;
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: auto;
+
+	}
 #logo{
 	background-image: url("../res/logo.png");
 	background-repeat: no-repeat;
@@ -47,8 +51,10 @@ body{
 	margin-top:1em;
 	margin-bottom:1em;
 }
+
 .menuitem a{
-	/*font-family:Calibri;*/
+	font-family:Calibri;
+	
 	color:black;
 	font-size:16px;
 	text-decoration:none;
@@ -61,7 +67,7 @@ body{
 	height:1600px;
 }
 #content h1{
-	/*font-family:Arial;*/
+	font-family:Arial;
 	font-size:26px;
 }
 #stat{
@@ -72,8 +78,20 @@ body{
 	float: left;
 	border-spacing:2px;
 }
+#stat tr{
+	clear:right;
+}
 #stat th,td{
-	text-align: left;
+	margin-left:0;
 	height:10px;
 	width:200px;
+}
+#stat select{
+	margin-left:3em;
+}
+#stat p{
+	margin-left:3em;
+}
+#listHeader{
+	font-size:16px;
 }
