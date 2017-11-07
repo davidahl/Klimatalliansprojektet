@@ -1,15 +1,18 @@
 var outlets=[];
 var components=["input","option","output"];
-
+var rows=[];
 $(document).ready(function(){
-    $(".outlet").each(function(){
+    $("#stattable > tr").each(function(index, el) {
+
+    });
+    /*$(".outlet").each(function(){
         outlets.push($(this).attr('name'));
     });
     for (var i in outlet) {
         $("."+outlet[i]+components[0]).addEventListener('keypress', function(e){
-            
+
         });
-    }
+    }*/
     /**$('#wrapper').css({
 		'position' : 'absolute',
 		'left' : '50%',
