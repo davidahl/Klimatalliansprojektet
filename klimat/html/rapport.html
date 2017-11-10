@@ -1,11 +1,14 @@
 <html>
 	<head>
+		<style> tabel,th,{
+			border: 1px solod black;
+		}
+		</style>
 		<meta charset="UTF-8">
 		<title>
 			Klimat allians Lund - Rapport
 		</title>
 		<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
-		<link rel="stylesheet" type="text/css" href="../css/style-rapport.css">
 		<link rel="icon" href="../res/icon.png">
 	</head>
 	<body>
@@ -38,7 +41,6 @@
 			</div>
 			<div id="content">
 				<div id="sidebar">
-					<div id="follower">
 					<ul>
 						<li class="menuitem">
 							<a href="#">
@@ -55,7 +57,6 @@
 								Flygresor
 							</a>
 						</li>
-					</div>
 				</div>
 				<div id="stat">
 					<h1>
@@ -64,17 +65,22 @@
 					<p>
 						År: <span style="font-weight:bold;"> Current Year </span>
 					</p>
-
-				<table border="0">
+				
+				<table border="0" id="reportTable">
 					<thead>
 					    <tr>
-						<td>Utsläppskälla</td>
-						<td>Inköpt mängd</td>
-						<td>Enhet</td>
-						<td>Ton CO<sub>2</sub></td>
+						<th>Utsläppskälla</th>
+						<th>Inköpt mängd</th>
+						<th>Enhet</th>
+						<th>Ton CO<sub>2</sub></th>
 					    </tr>
 					</thead>
 					<tbody id="stattable">
+						<tr>
+								<th>
+								Transport
+								</th>
+							</tr>
 						<tr>
 							<td>Bensin</td>
 							<td><input type="text" class="inputbox"/></td>
@@ -232,8 +238,188 @@
 							</td>
 							<td><input type="text" class="inputbox"/></td>
 					    	</tr>
+							<tr style="font-size:18px;">
+								<th>								
+									Lokalaprocesser
+								</th>	
+							</tr>
+							
+							<tr>
+								<td>
+								Lokaler som företaget äger
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Varav lokaler som hyrs ut
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Olja
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>m3</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Gasol
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Fjärrvärme EF Kristianstad 2015
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Halm
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Pellets
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								Miljömärkt el
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								ospecificerad el
+								</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td>
+								<select>
+									<option>
+										<sup>MWh</sup>
+									</option>
+								</select>
+								
+								</td>
+								<td>
+								<input type="text" class="inputbox"/>
+								</td>
+							</tr>
+							<tr>
+								<th>
+								Flygresor
+								</th>
+							</tr>
+							<tr>
+							<td>Från</td>
+							<td>Till</td>
+							<td>Längd km</td>
+							<td>kg C02</td>
+							</tr>
+							<tr>
+							<td><input type="text" class="inputbox"/></td>
+							<td><input type="text" class="inputbox"/></td>
+							<td><input type="text" class="inputbox"/></td>
+							<td><input type="text" class="inputbox"/></td>
+							</tr>
+						
 					</tbody>
 				    </table>
+					<button id="addrow">
+						Ny resa
+					</button>
 				</div>
 			</div>
 		</div>
