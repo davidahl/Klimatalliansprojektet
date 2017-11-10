@@ -8,7 +8,9 @@
 		<title>
 			Klimat allians Lund - Rapport
 		</title>
+		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
+		<link rel="stylesheet" type="text/css" href="../css/rapport-style.css">
 		<link rel="icon" href="../res/icon.png">
 	</head>
 	<body>
@@ -40,10 +42,10 @@
 				</ul>
 			</div>
 			<div id="content">
-				<div id="sidebar">
+				<div id="sidebar" style="position:fixed">
 					<ul>
 						<li class="menuitem">
-							<a href="#">
+							<a href="#transport">
 								Transport
 							</a>
 						</li>
@@ -65,8 +67,10 @@
 					<p>
 						År: <span style="font-weight:bold;"> Current Year </span>
 					</p>
-				
-				<table border="0" id="reportTable">
+				<h1 id="transport">
+					Transport
+				</h1>
+				<table border="0">
 					<thead>
 					    <tr>
 						<th>Utsläppskälla</th>
@@ -76,11 +80,6 @@
 					    </tr>
 					</thead>
 					<tbody id="stattable">
-						<tr>
-								<th>
-								Transport
-								</th>
-							</tr>
 						<tr>
 							<td>Bensin</td>
 							<td><input type="text" class="inputbox"/></td>
@@ -237,185 +236,193 @@
 								</select>
 							</td>
 							<td><input type="text" class="inputbox"/></td>
-					    	</tr>
-							<tr style="font-size:18px;">
-								<th>								
-									Lokalaprocesser
-								</th>	
+				    	</tr>
+					</tbody>
+				</table>
+				<h1 id="lokalaprocesser">
+					Lokalaprocesser
+				</h1>
+				<table>
+					<thead>
+						<tr>
+							<th>Utsläppskälla</th>
+							<th>Inköpt mängd</th>
+							<th>Enhet</th>
+							<th>Ton CO<sub>2</sub></th>
 							</tr>
-							
-							<tr>
-								<td>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
 								Lokaler som företaget äger
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Varav lokaler som hyrs ut
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Olja
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>m3</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Gasol
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Fjärrvärme EF Kristianstad 2015
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Halm
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Pellets
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								Miljömärkt el
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
+							</td>
+							<td>
 								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
-							<tr>
-								<td>
+							</td>
+						</tr>
+						<tr>
+							<td>
 								ospecificerad el
-								</td>
-								<td><input type="text" class="inputbox"/></td>
-								<td>
+							</td>
+							<td><input type="text" class="inputbox"/></td>
+							<td>
 								<select>
 									<option>
 										<sup>MWh</sup>
 									</option>
 								</select>
-								
-								</td>
-								<td>
-								<input type="text" class="inputbox"/>
-								</td>
-							</tr>
+							</td>
+							<td>
+									<input type="text" class="inputbox"/>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<h1 id="flygresor">
+						Flygresor
+					</h1>
+					<table id="reportTable">
+						<thead>
 							<tr>
-								<th>
-								Flygresor
-								</th>
+								<th>Från</th>
+								<th>Till</th>
+								<th>Längd km</th>
+								<th>kg C02</th>
 							</tr>
+						</thead>
 							<tr>
-							<td>Från</td>
-							<td>Till</td>
-							<td>Längd km</td>
-							<td>kg C02</td>
+								<td><input type="text" class="inputbox"/></td>
+								<td><input type="text" class="inputbox"/></td>
+								<td><input type="text" class="inputbox"/></td>
+								<td><input type="text" class="inputbox"/></td>
 							</tr>
-							<tr>
-							<td><input type="text" class="inputbox"/></td>
-							<td><input type="text" class="inputbox"/></td>
-							<td><input type="text" class="inputbox"/></td>
-							<td><input type="text" class="inputbox"/></td>
-							</tr>
-						
-					</tbody>
+						</tbody>
 				    </table>
 					<button id="addrow">
 						Ny resa

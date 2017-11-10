@@ -1,7 +1,10 @@
 body{
-	
+
 	background-repeat: repeat-x;
 	background-color: #E0E0E0;
+}
+li,p,h1,td,th,option{
+	font-family: 'Barlow',sans-serif;
 }
 #wrapper{
 	background-image: url("../res/gradient.png");
@@ -53,8 +56,6 @@ body{
 }
 
 .menuitem a{
-	font-family:Calibri;
-	
 	color:black;
 	font-size:16px;
 	text-decoration:none;
@@ -67,7 +68,6 @@ body{
 	height:1600px;
 }
 #content h1{
-	font-family:Arial;
 	font-size:26px;
 }
 #stat{
