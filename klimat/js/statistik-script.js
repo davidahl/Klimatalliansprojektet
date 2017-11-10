@@ -31,7 +31,7 @@ $(document).ready(function(){
     			responsive:true,
             scales: {
     			xAxes: [{
-    				barThickness:150,
+    				barThickness:50,
     				stacked:true
     			}],
                 yAxes: [{
