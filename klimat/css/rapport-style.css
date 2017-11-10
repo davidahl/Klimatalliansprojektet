@@ -1,8 +1,44 @@
+#sidebar{
+	float:left;
+	height:600px;
+	width:200px;
+}
+#sidebar ul{
+	float:left;
+	list-style-type:none;
+}
+#sidebar li{
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+#stat{
+	margin-left:300px;
+	width:800px;
+}
+#stat table{
+	float: left;
+	border-spacing:2px;
+}
+#stat tr{
+	clear:right;
+}
+#stat th,td{
+	margin-left:0;
+	height:10px;
+	width:200px;
+}
+#stat select{
+	margin-left:3em;
+}
+#stat p{
+	margin-left:3em;
+}
+
 #content table{
     margin-top: 5px;
     margin-bottom: 5em;
 }
 #content th{
     text-align: left;
-    
 }

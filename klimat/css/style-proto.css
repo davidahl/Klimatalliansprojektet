@@ -1,9 +1,8 @@
 body{
-
 	background-repeat: repeat-x;
 	background-color: #E0E0E0;
 }
-li,p,h1,td,th,option{
+li,p,h1,h2,h3,td,th,option{
 	font-family: 'Barlow',sans-serif;
 }
 #wrapper{

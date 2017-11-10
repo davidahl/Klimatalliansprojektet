@@ -4,6 +4,8 @@
 		<title>
 			Klimat allians Lund - Mina Sidor
 		</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
 		<link rel="stylesheet" type="text/css" href="../css/minasidor-style.css">
 		<style>
@@ -49,18 +51,23 @@
 				Ändra Lösenord
 				</h2>
 				  <form action="/action_page.php">
-					Befingligt Lösenord:<br>
-					<input type="password" name="oldPass" value="">
-					<br><br>
-					Nytt Lösenord:<br>
-					<input id="newpass" type="password" name="newPass" value="">
-					<br><br>
-					Bekräfta nytt lösenord:<br>
-					<input id="newpassconf" type="password" name="newPassconfirm" value="">
-					<br>
-					<p hidden id="nomatch"> Passwords dont match </p>
-					<br>
-					<input type="submit" value="Ändra Lösenord">
+					  	<p>
+						  Befingligt Lösenord:
+					  	</p>
+					  	<input type="password" name="oldPass" value="">
+					  	<p>
+							Nytt Lösenord:
+						</p>
+						<input id="newpass" type="password" name="newPass" value="">
+						<p>
+							Bekräfta nytt lösenord:
+						</p>
+						<input id="newpassconf" type="password" name="newPassconfirm" value="">
+						<p hidden id="nomatch">
+							Passwords dont match
+						</p>
+						<br>
+						<input type="submit" value="Ändra Lösenord">
 				</form>
 			</div>
 		</div>
