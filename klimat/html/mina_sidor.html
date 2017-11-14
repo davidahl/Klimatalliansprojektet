@@ -78,14 +78,17 @@
 			function validateForm() {
 			var newpass = document.forms["passwchange"]["newpass"].value;
 			var newPassconf = document.forms["passwchange"]["newpassconf"].value;
-			if (newpass != newPassconf) {
-	
-			document.getElementById("nomatch").innerHTML = "Passwords dont match";
-			return false;
-				}else{
-				alert("password changed");
+			if(newpass != "" && newpassconf != ""){
+				if (newpass != newPassconf) {
+		
+				document.getElementById("nomatch").innerHTML = "Passwords don't match";
+				return false;
+					}else{
+					alert("Password changed");
+					}
 				}
-			
+				document.getElementById("nomatch").innerHTML = "Password lenght needs to be more than ??";
+				return false
 			}
 		</script>
 	</body>
