@@ -32,6 +32,12 @@ $(document).ready(function(){
 		cell4.innerHTML = "<input type='text' class='inputbox'/>";
 		
 	});
+	$("#logout").click(function(){
+		var r = confirm("är du säker på att du vill logga ut?")
+		if(r){
+			document.getElementById("logout").action = "inloggning.html";
+		}
+	})
 });
 
 
