@@ -1,6 +1,8 @@
 body{
 	background-repeat: repeat-x;
-	background-color: #E0E0E0;
+	background-color: white;
+	margin: 0px; 
+	display: grid;
 }
 li,p,h1,h2,h3,td,th,option,form{
 	font-family: 'Barlow',sans-serif;
@@ -9,20 +11,20 @@ li,p,h1,h2,h3,td,th,option,form{
 	background-image: url("../res/gradient.png");
 	background-repeat: repeat-x;
 	background-color: white;
-	margin-left: 10%;
-	margin-right: 10%;
-	height: 2000px;
-	width:1600px:
+	height: 100%;
+	width:	100%
 	}
 #logo{
 	background-image: url("../res/logo.png");
 	background-repeat: no-repeat;
-	width:1600px;
+	margin-left:15px;
+	margin-top:15px;
+	width:100%;
 	height:100px;
 }
 #menu{
-	width:1600px;
-	height: 120px;
+	width:100%;
+	height: 50px;
 }
 #menu ul{
 	list-style-type: none;
@@ -42,6 +44,9 @@ li,p,h1,h2,h3,td,th,option,form{
 	color: #26EBFF;
 }
 #sidebar{
+	position:fixed;
+	overflow:hidden;
+	background:white;
 	float:left;
 	height:600px;
 	width:200px;
@@ -64,14 +69,15 @@ li,p,h1,h2,h3,td,th,option,form{
 	color:#26EBFF;
 }
 #content{
-	width:1400px;
-	height:1600px;
+	width:auto;
+	height:auto;
 }
 #content h1{
 	font-size:26px;
 }
 #stat{
-	margin-left:300px;
+	margin-left:auto;
+	margin-right:auto;
 	width:800px;
 }
 #stat table{
@@ -101,4 +107,7 @@ li,p,h1,h2,h3,td,th,option,form{
 }
 .currentpage a{
 	color:white;
+}
+#addrow{
+	margin-bottom: 10px;
 }
