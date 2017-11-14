@@ -48,11 +48,11 @@
 				<h2>
 				Ändra Lösenord
 				</h2>
-				  <form id="passwchange" action="/action_page.php">
+				  <form id="passwchange" onsubmit="return validateForm()">
 					  	<p>
-						  Befintligt Lösenord:
+						  Befingligt Lösenord:
 					  	</p>
-					  	<input type="password" name="oldPass" value="">
+					  	<input id="oldpass" type="password" name="oldPass" value="">
 					  	<p>
 							Nytt Lösenord:
 						</p>
@@ -61,11 +61,12 @@
 							Bekräfta nytt lösenord:
 						</p>
 						<input id="newpassconf" type="password" name="newPassconfirm" value="">
-						<p hidden id="nomatch">
-							Passwords dont match
+						<p id="nomatch">
+							
 						</p>
 						<br>
 						<input id="change" type="submit"value="Ändra Lösenord">
+							
 				</form>
 			</div>
 		</div>
@@ -73,5 +74,19 @@
 
 		<script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
 		<script type="text/javascript" src="../js/minasidor-script.js"></script>
+		<script>
+			function validateForm() {
+			var newpass = document.forms["passwchange"]["newpass"].value;
+			var newPassconf = document.forms["passwchange"]["newpassconf"].value;
+			if (newpass != newPassconf) {
+	
+			document.getElementById("nomatch").innerHTML = "Passwords dont match";
+			return false;
+				}else{
+				alert("password changed");
+				}
+			
+			}
+		</script>
 	</body>
 </html>
