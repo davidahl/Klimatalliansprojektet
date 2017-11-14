@@ -1,6 +1,6 @@
 #sidebar{
 	float:left;
-	height:600px;
+	height:100%;
 	width:200px;
 }
 #sidebar ul{
@@ -13,7 +13,7 @@
 }
 
 #stat{
-	margin-left:300px;
+	margin-left:200px;
 	width:800px;
 }
 #stat table{
