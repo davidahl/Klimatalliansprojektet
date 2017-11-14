@@ -15,6 +15,11 @@
 		<link rel="icon" href="../res/icon.png">
 	</head>
 	<body>
+		<form id="logout" align="right" name="form1" method="post" action="historik.html">
+			  <label class="logoutLblPos">
+			  <input name="submit2" type="submit" id="submit2" value="log out">
+			  </label>
+		</form>
 		<div id="wrapper">
 			<div id="logo">
 			</div>
@@ -49,7 +54,7 @@
 					<h1>
 						Inventering av CO<sub>2</sub> utsläpp från transporter
 					</h1>
-					<select id="yeardrop">
+					<select id="yeardrop" onselect= "myfunction()">
 						<option>
 							2016
 						</option>
@@ -64,11 +69,14 @@
 							<th> Enhet</th>
 							<th> ton CO<sub>2</sub></th>
 						</tr>
+					<tbody id = "gentable">
+					</tbody>
 
 				</div>
 			</div>
 		</div>
 		<script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
 		<script type="text/javascript" src="../js/proto-script.js"></script>
+		<script type="text/javascript" src="../js/historik-script.js"></script>
 	</body>
 </html>
