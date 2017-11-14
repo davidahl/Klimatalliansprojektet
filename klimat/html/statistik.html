@@ -17,6 +17,11 @@
 		<link rel="icon" href="../res/icon.png">
 	</head>
 	<body>
+		<form id="logout" align="right" name="form1" method="post" action="statistik.html">
+			  <label class="logoutLblPos">
+			  <input name="submit2" type="submit" id="submit2" value="log out">
+			  </label>
+		</form>
 		<div id="wrapper">
 			<div id="logo">
 			</div>
@@ -47,9 +52,9 @@
 			<div class="chart-container">
 				<div id="chart">
 					<form name="hej">
-						2014<input type="checkbox" checked="true" name="Transport">
-						2015<input type="checkbox" checked="true	" name="Lokala processer">
-						2016<input type="checkbox" checked="true" name="Flygresor">
+						Axis<input type="checkbox" checked="true" name="axis">
+						Volvo<input type="checkbox" checked="true	" name="volvo">
+						Tuna<input type="checkbox" checked="true" name="tuna">
 					</form>
 					<canvas id="myChart" styles="width=100px height=100px"></canvas>
 				</div>
@@ -57,6 +62,7 @@
 		</div>
 		<script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
 		<script type="text/javascript" src="../js/statistik-script.js"></script>
-		<script type="text/javascript" src="../js/chartjs_min.js"></script>
+		<script type="text/javascript" src="../js/chartjs_min.js"></script>	
+		<script type="text/javascript" src="../js/proto-script.js"></script>
 	</body>
 </html>

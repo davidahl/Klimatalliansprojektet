@@ -17,6 +17,11 @@
 		<link rel="icon" href="../res/icon.png">
 	</head>
 	<body>
+		<form id="logout" align="right" name="form1" method="post" action="mina_sidor.html">
+			  <label class="logoutLblPos">
+			  <input name="submit2" type="submit" id="submit2" value="log out">
+			  </label>
+		</form>
 		<div id="wrapper">
 			<div id="logo">
 			</div>
@@ -74,6 +79,7 @@
 
 		<script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
 		<script type="text/javascript" src="../js/minasidor-script.js"></script>
+		<script type="text/javascript" src="../js/proto-script.js"></script>
 		<script>
 			function validateForm() {
 			var newpass = document.forms["passwchange"]["newpass"].value;
