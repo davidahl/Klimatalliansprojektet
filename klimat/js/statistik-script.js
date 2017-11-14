@@ -8,23 +8,23 @@ $(document).ready(function(){
     var myChart = new Chart(ctx, {
         type: 'bar',
     		data: {
-            labels: ["Axis", "Volvo", "tuna", "Georg", "Denada"],
+            labels: ["2014", "2015", "2016"],
             datasets: [{
-    						label:"Bensin",
-                data: [727, 589, 537, 543, 574],
-                backgroundColor: "rgba(63,103,126,1)",
-                hoverBackgroundColor: "rgba(50,90,100,1)"
+    						label:"Transport",
+                data: [500,500,400],
+                backgroundColor: "rgba(180,50,50,1)",
+                hoverBackgroundColor: "rgba(150,50,50,1)"
             },{
-    						label:"Bla",
-                data: [238, 553, 746, 884, 903],
-                backgroundColor: "rgba(163,103,126,1)",
-                hoverBackgroundColor: "rgba(140,85,100,1)"
+    						label:"Lokala processer",
+                data: [600,600,500],
+                backgroundColor: "rgba(50,180,50,1)",
+                hoverBackgroundColor: "rgba(50,150,50,1)"
             },{
 
-    						label:"Flyg",
-                data: [1238, 553, 746, 884, 903],
-                backgroundColor: "rgba(63,203,226,1)",
-                hoverBackgroundColor: "rgba(46,185,235,1)"
+    						label:"Flygresor",
+                data: [600,700,1000],
+                backgroundColor: "rgba(50,50,180,1)",
+                hoverBackgroundColor: "rgba(50,50,150,1)"
             }]
         },
         options: {
