@@ -8,12 +8,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
 		<link rel="stylesheet" type="text/css" href="../css/minasidor-style.css">
-		<style>
-			#yeardrop{
-				width:500px;
-				height: 40px;
-			}
-		</style>
 		<link rel="icon" href="../res/icon.png">
 	</head>
 	<body>
@@ -67,11 +61,11 @@
 						</p>
 						<input id="newpassconf" type="password" name="newPassconfirm" value="">
 						<p id="nomatch">
-							
+
 						</p>
 						<br>
 						<input id="change" type="submit"value="Ändra Lösenord">
-							
+
 				</form>
 			</div>
 		</div>
@@ -86,7 +80,7 @@
 			var newPassconf = document.forms["passwchange"]["newpassconf"].value;
 			if(newpass != "" && newpassconf != ""){
 				if (newpass != newPassconf) {
-		
+
 				document.getElementById("nomatch").innerHTML = "Passwords don't match";
 				return false;
 					}else{

@@ -1,7 +1,5 @@
 body{
-	background-repeat: repeat-x;
 	background-color: white;
-	margin: 0px;
 	display: grid;
 }
 li,p,h1,h2,h3,td,th,option,form{
@@ -10,7 +8,6 @@ li,p,h1,h2,h3,td,th,option,form{
 #wrapper{
 	background-image: url("../res/gradient.png");
 	background-repeat: repeat-x;
-	background-color: white;
 	height: 100%;
 	width:	100%;
 	}
@@ -43,22 +40,6 @@ li,p,h1,h2,h3,td,th,option,form{
 #menu li a:hover{
 	color: #26EBFF;
 }
-#sidebar{
-	position:fixed;
-	overflow:hidden;
-	background:white;
-	float:left;
-	height:600px;
-	width:200px;
-}
-#sidebar ul{
-	float:left;
-	list-style-type:none;
-}
-#sidebar li{
-	margin-top:1em;
-	margin-bottom:1em;
-}
 
 .menuitem a{
 	color:black;
@@ -75,29 +56,6 @@ li,p,h1,h2,h3,td,th,option,form{
 #content h1{
 	font-size:26px;
 }
-#stat{
-	margin-left:auto;
-	margin-right:auto;
-	width:800px;
-}
-#stat table{
-	float: left;
-	border-spacing:2px;
-}
-#stat tr{
-	clear:right;
-}
-#stat th,td{
-	margin-left:0;
-	height:10px;
-	width:200px;
-}
-#stat select{
-	margin-left:3em;
-}
-#stat p{
-	margin-left:3em;
-}
 #listHeader{
 	font-size:16px;
 }
@@ -107,7 +65,4 @@ li,p,h1,h2,h3,td,th,option,form{
 }
 .currentpage a{
 	color:white;
-}
-#addrow{
-	margin-bottom: 10px;
 }
