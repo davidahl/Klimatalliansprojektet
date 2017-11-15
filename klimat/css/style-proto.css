@@ -5,15 +5,19 @@ body{
 li,p,h1,h2,h3,td,th,option,form{
 	font-family: 'Barlow',sans-serif;
 }
+#logout{
+	text-align: right;
+}
 #wrapper{
 	background-image: url("../res/gradient.png");
 	background-repeat: repeat-x;
 	height: 100%;
-	width:	100%;
+	width: 100%;
 	}
 #logo{
 	background-image: url("../res/logo.png");
 	background-repeat: no-repeat;
+	background-size: 440px 100px;
 	margin-left:15px;
 	margin-top:15px;
 	width:100%;

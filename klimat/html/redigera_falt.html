@@ -1,60 +1,61 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>
-			Klimat allians Lund - Admin redigera fält
-		</title>
-		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../css/redigera-style.css">
-		<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
-		<link rel="icon" href="../res/icon.png">
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="logo">
-			</div>
-			<div id="menu">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Klimat allians Lund - Admin redigera fält
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/rapport-style.css"
+	<link rel="stylesheet" type="text/css" href="../css/redigera-style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style-proto.css">
+	<link rel="icon" href="../res/icon.png">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="logo">
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="menuitem">
+					<a href="statistik_admin.html">
+						Statistik
+					</a>
+				</li>
+				<li class="menuitem">
+					<a href="redigera_falt.html">
+						Redigera fält
+					</a>
+				</li>
+				<li class="menuitem">
+					<a href="anvandare.html">
+						Användare
+					</a>
+				</li>
+				<li class="menuitem">
+					<a href="mina_sidor_admin.html">
+						Mina Sidor
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="sidebar">
 				<ul>
 					<li class="menuitem">
-						<a href="statistik_admin.html">
-							Statistik
+						<a href="#">
+							Transport
 						</a>
 					</li>
 					<li class="menuitem">
-						<a href="redigera_falt.html">
-							Redigera fält
+						<a href="#">
+							Lokala processer
 						</a>
 					</li>
 					<li class="menuitem">
-						<a href="anvandare.html">
-							Användare
+						<a href="#">
+							Flygresor
 						</a>
 					</li>
-					<li class="menuitem">
-						<a href="mina_sidor_admin.html">
-							Mina Sidor
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div id="content">
-				<div id="sidebar">
-					<ul>
-						<li class="menuitem">
-							<a href="#">
-								Transport
-							</a>
-						</li>
-						<li class="menuitem">
-							<a href="#">
-								Lokala processer
-							</a>
-						</li>
-						<li class="menuitem">
-							<a href="#">
-								Flygresor
-							</a>
-						</li>
 				</div>
 				<div id="stat">
 					<h1>
@@ -63,85 +64,200 @@
 					<p>
 						År: <span style="font-weight:bold;"> Current Year </span>
 					</p>
-					<tables>
-						<tr >
-							<th>Utsläppskälla</th>
-							<th>Inköpt mängd</th>
-							<th> Enhet</th>
-							<th> ton CO<sub>2</sub></th>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+					<table>
+						<thead>
+							<tr>
+								<th> Används </th>
+								<th>Utsläppskälla</th>
+								<th> Enhet</th>
+								<th> Omräknings faktor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Bensin"/>
+								</td>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" size="5" value="m3"/>
+								</td>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Diesel"/>
+								</td>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Bensin</p>
-							</td>
-							<td> <input type="text" class="inputbox"/> </td>
-							<td>
-								<select>
-									<option>
-										m<sup>3</sup>
-									</option>
-									<option>
+								<td>
+									<input type="text" class="inputbox unitbox"  size="5" value="m3"/>
+								</td>
 
-								<select>
-							</td>
-							<td>
-								<input type="text" class="inputbox"/>
-							</td>
-						</tr>
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Diesel 24%förnybar"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Diesel Preem Evolution"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" checked="true;"/>
+								</td>
+								<td>
+									<input type="text" class="inputbox namebox" value="Hyrbil"/>
+								</td>
+
+								<td>
+									<input type="text" class="inputbox unitbox" size="5" value="m3"/>
+								</td>
+
+								<td><input type="text" class="inputbox"/></td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
@@ -149,4 +265,4 @@
 		<script type="text/javascript" src="../js/jquery-3.2.1.slim.min.js"></script>
 		<script type="text/javascript" src="../js/proto-script.js"></script>
 	</body>
-</html>
+	</html>
