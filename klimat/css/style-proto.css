@@ -1,7 +1,7 @@
 body{
 	background-repeat: repeat-x;
 	background-color: white;
-	margin: 0px; 
+	margin: 0px;
 	display: grid;
 }
 li,p,h1,h2,h3,td,th,option,form{
@@ -12,7 +12,7 @@ li,p,h1,h2,h3,td,th,option,form{
 	background-repeat: repeat-x;
 	background-color: white;
 	height: 100%;
-	width:	100%
+	width:	100%;
 	}
 #logo{
 	background-image: url("../res/logo.png");
