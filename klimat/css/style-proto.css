@@ -3,11 +3,12 @@ body{
 	background-repeat: repeat-x;
 	display: grid;
 }
-select{
-	display: block;
-}
 li,p,h1,h2,h3,td,th,select,option,form{
 	font-family: 'Barlow',sans-serif;
+}
+a{
+	text-decoration: none;
+	color:black;
 }
 #wrapper{
 	height: 100%;
@@ -38,47 +39,51 @@ li,p,h1,h2,h3,td,th,select,option,form{
 	float:left;
 }
 #menu li a{
+	font-size: 18px;
+	text-decoration: underline;
 	margin-left: auto;
 	margin-right: auto;
 }
 #menu li a:hover{
 	color: #26EBFF;
 }
-.loggaut{
-	float: right;
-	background-color: white; /* Green */
+.flatbutton{
+	background-color: white;
+	padding:0px 10px 0px;
 	border: 1px solid #5DBCFF;
-	padding: 10px;
-	text-align: center;
+	border-radius: 5px;
+	text-align:center;
 	text-decoration: none;
+	font-size: 16px;
 	display: inline-block;
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
-.loggaut:hover{
+.flatbutton:hover{
 	background-color: #5DBCFF;
 }
-.menuitem a{
+.menuitem {
+	padding:2px;
 	color:black;
-	font-size:16px;
 	text-decoration:none;
 }
 .menuitem a:hover{
 	color:#26EBFF;
 }
 #content{
-	width:auto;
 	height:auto;
 }
 #content h1{
 	font-size:26px;
+
 }
 #listHeader{
 	font-size:16px;
 }
 .currentpage{
 	display: block;
+	padding:2px;
 	background-color: #5DBCFF;
 }
 .currentpage a{
