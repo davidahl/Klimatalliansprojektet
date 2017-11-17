@@ -1,18 +1,18 @@
 body{
-	background-color: white;
-	display: grid;
-}
-li,p,h1,h2,h3,td,th,option,form{
-	font-family: 'Barlow',sans-serif;
-}
-#logout{
-	text-align: right;
-}
-#wrapper{
 	background-image: url("../res/gradient.png");
 	background-repeat: repeat-x;
+	display: grid;
+}
+select{
+	display: block;
+}
+li,p,h1,h2,h3,td,th,select,option,form{
+	font-family: 'Barlow',sans-serif;
+}
+#wrapper{
 	height: 100%;
-	width: 100%;
+	width: 1000px;
+	margin:auto;
 }
 #logo{
 	background-image: url("../res/logo.png");
@@ -24,7 +24,7 @@ li,p,h1,h2,h3,td,th,option,form{
 	height:100px;
 }
 #menu{
-	width:1000px;
+	width:800px;
 	height: 100px;
 }
 #menu ul{
