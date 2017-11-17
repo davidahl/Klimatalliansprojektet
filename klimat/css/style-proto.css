@@ -43,8 +43,12 @@ a{
 	text-decoration: underline;
 	margin-left: auto;
 	margin-right: auto;
+
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
 }
 #menu li a:hover{
+
 	color: #26EBFF;
 }
 .flatbutton{
