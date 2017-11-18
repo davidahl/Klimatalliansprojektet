@@ -53,9 +53,9 @@ a{
 }
 .flatbutton{
 	background-color: white;
-	padding:0px 10px 0px;
 	border: 1px solid #5DBCFF;
 	border-radius: 5px;
+	font-family: 'Barlow',sans-serif;
 	text-align:center;
 	text-decoration: none;
 	font-size: 16px;
